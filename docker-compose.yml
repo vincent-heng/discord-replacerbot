@@ -1,0 +1,10 @@
+version: '3.1'
+
+services:
+
+        replacerbot:
+          build: .
+          container_name: "replacerbot"
+          restart: always
+          volumes:
+            - ./config.json:/config.json
