@@ -60,7 +60,7 @@ func (b *Bot) Handler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
-	newContent := strings.ReplaceAll(m.Content, "^^", ":yum:")
+	newContent := strings.ReplaceAll(m.Content, "^^", ":blush:")
 	if newContent == m.Content {
 		return
 	}
