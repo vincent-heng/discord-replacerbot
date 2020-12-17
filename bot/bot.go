@@ -60,6 +60,10 @@ func (b *Bot) Handler(s *discordgo.Session, m *discordgo.MessageCreate) {
 		return
 	}
 
+	if m.ChannelID == "788356138009755670" {
+		return
+	}
+
 	newContent := strings.ReplaceAll(m.Content, "^^", ":blush:")
 	if newContent == m.Content {
 		return
